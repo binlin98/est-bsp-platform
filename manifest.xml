@@ -10,6 +10,7 @@
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
   <remote fetch="https://source.codeaurora.org/external/imxsupport" name="avs-release" />
+  <remote fetch="git://github.com/estonetechnology" name="estone" />
 
   <project remote="yocto" revision="8298428c032ec9bc5b514d0c194a16cf371475ea" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="05681fdf8298bb441c15135eae424c7601b07e98" name="meta-freescale" path="sources/meta-freescale"/>
@@ -31,6 +32,8 @@
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
+
+  <project remote="estone" name="meta-est-imx" path="sources/meta-est-imx" revision="morty-imx-4.9" />
 
   <project remote="avs-release" name="meta-avs-demos" path="sources/meta-avs-demos" revision="imx-alexa-sdk">
      <linkfile src="tools/avs-setup-demo-8mqevk.sh" dest="avs-setup-demo.sh"/>
